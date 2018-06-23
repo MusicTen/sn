@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import "variable";
+@import "normalize";
+@import "base";
+@import "adaptor";
+.sn_container {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 750px;
+  padding-top: 90rem/@base;
+}
+.sn_header {
+  height: 90rem/@base;
+  width: 100%;
+  max-width: 750px;
+  background-color: @snColor;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 0 90rem/@base;
+  .cate,
+  .cart {
+    width: 90rem/@base;
+    height: 90rem/@base;
+    position: absolute;
+    top: 0;
+  }
+  .cate {
+    left: 0;
+    background: url("../images/icon_category.png") no-repeat center;
+    background-size: 44rem/@base 70rem/@base; 
+  }
+  .cart {
+    right: 0;
+    background: url("../images/icon_cart.png") no-repeat center;
+    background-size: 63rem/@base 68rem/@base;
+  }
+  .search {
+    height: 90rem/@base;
+    position: relative;
+    i {
+      width: 50rem/@base;
+      height: 60rem/@base;
+      position: absolute;
+      top: 16rem/@base;
+      left: 0;
+      background: url("../images/icon_search.png") no-repeat center;
+      background-size: 27rem/@base 28rem/@base;
+    }
+    input {
+      margin-top: 15rem/@base;
+      width: 100%;
+      height: 60rem/@base;
+      border-radius: 5rem/@base;
+      font-size: 24rem/@base;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding-left: 50rem/@base;
+    }
+  }
+}
+
+.sn_wraper {
+  
+  li{
+    width: 20%;
+    float: left;
+    a{
+      display: block;
+      margin-top: 10rem/@base;
+      text-align: center;
+      img {
+        width: 80rem/@base;
+        height: 80rem/@base;
+        margin: 0 auto;
+      }
+      p {
+        height: 50rem/@base;
+        line-height: 50rem/@base;
+        font-size: 24rem/@base;
+      }
+    }
+
+  }
+    
+}
+
+.sn_footer {
+  height: 100rem/@base;
+  width: 100%;
+  max-width: 750px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  li{
+    float: left;
+    width: 20%;
+    a {
+      display: block;
+      text-align: center;
+      padding-top: 10rem/@base;
+      img {
+        width: 50rem/@base;
+        height: 50rem/@base;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.sn_banner {
+
+  .swiper-pagination {
+    text-align: right;
+    padding-right: 10rem/@base;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20rem/@base;
+    height: 20rem/@base;
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: @snColor;
+  }
+
+}
